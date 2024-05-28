@@ -1,0 +1,1003 @@
+{
+	"info": {
+		"_postman_id": "7b005079-3073-4e19-8394-2e0ded5b77f4",
+		"name": "PetApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "message",
+			"item": [
+				{
+					"name": "send",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://petapp.toolgencode.com/api/message/get/2",
+							"protocol": "https",
+							"host": [
+								"petapp",
+								"toolgencode",
+								"com"
+							],
+							"path": [
+								"api",
+								"message",
+								"get",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmessage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://petapp.toolgencode.com/api/message/get/2",
+							"protocol": "https",
+							"host": [
+								"petapp",
+								"toolgencode",
+								"com"
+							],
+							"path": [
+								"api",
+								"message",
+								"get",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listmessage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://petapp.toolgencode.com/api/message/getlist",
+							"protocol": "https",
+							"host": [
+								"petapp",
+								"toolgencode",
+								"com"
+							],
+							"path": [
+								"api",
+								"message",
+								"getlist"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"binhnt.it28@gmail.com\",\r\n    \"password\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/petapp/public/api/login",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"binhnt.it28@gmail.com\",\r\n    \"password\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/petapp/public/api/login",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeinfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/binhn/StudioProjects/petshop_app/assets/image/logodog.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/categories/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"categories",
+								"create"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/binhn/StudioProjects/petshop_app/assets/image/logodog.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/categories/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"categories",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/binhn/StudioProjects/petshop_app/assets/image/logodog.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/categories/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"categories",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Đồ Ăn Cho Chó Trưởng Thành Hương Vị Thịt Bò Nướng Classic Pets (20kg)",
+									"type": "text"
+								},
+								{
+									"key": "categories_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/binhn/Downloads/thuc-an-cho-cho-classic-pets-huong-thit-bo-compressed.jpg"
+								},
+								{
+									"key": "detail",
+									"value": "Thức Ăn Cho Chó Trưởng Thành Hương Vị Thịt Bò Nướng Classic Pets (20kg) gồm các thành phần dinh dưỡng cho thú cưng.\nTinh bột: là nguồn năng lượng chính trong cơ thể của thú nuôi, ngoài ra tinh bột trong thức ăn viên khô giúp ngăn chặn bệnh táo bón ruột.\nChất béo kích thích sự ăn uống ngon miệng, cung cấp axit béo cần thiết giúp duy trì làn da và bộ lông khỏe mạnh mượt mà.\nKhoáng chất hình thành xương và sụn (như Ca và P), tạo ra các phản ứng Enzyme giúp tiêu hóa tốt, duy trì và cân bằng chất lỏng, ổn định sự co thắtcủa cơ bắp và chức năng thần kinh, giúp cho Răng và Xương cứng cáp, khỏe mạnh\nVitamin giúp chống lão hóa, cân bằng Canxi trong máu, tạo khoáng chất cho xương và răng, ổn định thể trạng trong sinh sản, tăng cường hệ miễn dịch, tăng cường thị giác.Nườc là một môi trường lỏng cho máu và hệ thống bạch huyết giúp ổn định nhiệt độ cơ thể.\nGiúp hệ tiêu hóa khỏe mạnh và hấp thụ tốt chất dinh dưỡng Vitamin và khoáng chất.",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "20000",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/product/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"product",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list new product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/binhn/StudioProjects/petshop_app/assets/image/logodog.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/product/newproduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"product",
+								"newproduct"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mua nhieu",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/binhn/StudioProjects/petshop_app/assets/image/logodog.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/product/newproduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"product",
+								"newproduct"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tất cả sản phẩm",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/binhn/StudioProjects/petshop_app/assets/image/logodog.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/product/newproduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"product",
+								"newproduct"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/binhn/StudioProjects/petshop_app/assets/image/logodog.png",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/product/searchproduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"product",
+								"searchproduct"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Thức ăn cho chó",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cart",
+			"item": [
+				{
+					"name": "insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/cart/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"cart",
+								"create"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteone",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/cart/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"cart",
+								"create"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/cart/deleteproduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"cart",
+								"deleteproduct"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete all",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/cart/deleteproduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"cart",
+								"deleteproduct"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/cart/index",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"cart",
+								"index"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Binh",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0395342134",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Nguyễn Nhàn, Đà Nẵng",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Giao hàng lẹ chút nhé <3 ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/petapp/public/api/cart/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"cart",
+								"order"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/petapp/public/api/listorder/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"listorder",
+								"4"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orderdetail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/petapp/public/api/listorder/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"petapp",
+								"public",
+								"api",
+								"listorder",
+								"4"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": ""
+		}
+	]
+}
